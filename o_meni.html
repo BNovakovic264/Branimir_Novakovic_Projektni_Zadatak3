@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>o_meni</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set background image and general styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('pozadine/pozadina1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            color: #f39c12;
+            text-transform: uppercase;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        .intro-section {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .about-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #f39c12;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .about-section p {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: justify;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+
+        .image-container {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .image-container img {
+            height: 600px;
+			width: auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .video-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .video-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #f39c12;
+        }
+
+        .video-section p {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: justify;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+
+        .video-section a {
+            text-decoration: none;
+            color: #f39c12;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .video-section a:hover {
+            color: #fff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about-section h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-section p {
+                padding: 15px;
+            }
+
+            .image-container img {
+                height: 200px;
+                max-width: 100%;
+            }
+
+            .video-section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">O MENI:</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vjezbe.html">Vježbe</a></li>
+                <li><a href="video.html">Video</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about-section">
+            <p>Student sam na Grafičkom fakultetu, smjer tehničko-tehnološki. Glavni životni cilj mi je konstantno učenje i rad na sebi. Slobodno vrijeme dosta provodim uz automobile još od malih nogu i veliki sam ljubitelj auto-moto sportova, posebno Formule 1. Uz studiranje na fakultetu također radim kao konobar, a prije toga sam radio i puno drugih poslova, a iz svih tih poslova sam naučio da je najbitnije upijati znanje od drugih kroz cijeli život i primjeniti ga u svakodnevnici.</p>
+            <div class="image-container">
+                <img src="slike/slika1.jpg" alt="Slika 1"> <img src="slike/slika2.jpg" alt="Slika 2">
+              
+                
+              
+            </div>
+			
+			<div class="image-container">
+              
+              
+                <img src="slike/slika3.jpg" alt="Slika 3"> <img src="slike/slika4.jpg" alt="Slika 4">
+              
+            </div>
+        </section>
+        <section class="video-section">
+            <h2>Video</h2>
+            <p>Videozapis: <a href="https://youtu.be/auXfAHHNSFo?si=82ziYDyV9LiPwRrQ">https://youtu.be/auXfAHHNSFo?si=82ziYDyV9LiPwRrQ</a></p>
+        </section>
+    </main>
+</body>
+</html>
