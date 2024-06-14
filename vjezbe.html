@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>vježbe</title>
+<style>
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vježbe</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set background image and general styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('pozadine/pozadina1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            color: #f39c12;
+            text-transform: uppercase;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        .intro-section {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .about-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #f39c12;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .about-section p {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: justify;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+
+        .image-container {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .image-container img {
+            height: 600px;
+			width: auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .video-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .video-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #f39c12;
+        }
+
+        .video-section p {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: justify;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+
+        .video-section a {
+            text-decoration: none;
+            color: #f39c12;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .video-section a:hover {
+            color: #fff;
+        }
+
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about-section h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-section p {
+                padding: 15px;
+            }
+
+            .image-container img {
+                height: 200px;
+                max-width: 100%;
+            }
+
+            .video-section h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+
+	</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">VJEŽBE:</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vjezbe.html">Vježbe</a></li>
+                <li><a href="video.html">Video</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="exercise-section">
+            <h2>1. vježba - font</h2>
+            <div class="image-container">
+                <img src="vjezbe/vjezba1.jpg" alt="Vježba 1">
+            </div>
+            <h2>2. vježba - bezierova krivulja, precizno crtanje</h2>
+            <div class="image-container">
+                <img src="vjezbe/vjezba2.jpg" alt="Vježba 2">
+            </div>
+            <h2>3. vježba - boja, transformacije</h2>
+            <div class="image-container">
+                <img src="vjezbe/vjezba3.jpg" alt="Vježba 3">
+            </div>
+            <h2>4. vježba - gradijenti, transparencija</h2>
+            <div class="image-container">
+                <img src="vjezbe/vjezba4.jpg" alt="Vježba 4">
+                <img src="vjezbe/vjezba4a.jpg" alt="Vježba 4a">
+            </div>
+            <h2>Projektni zadatak - vektorska grafika</h2>
+            <div class="image-container">
+                <img src="vjezbe/projekt1.jpg" alt="Projekt 1">
+            </div>
+            <h2>5. vježba - retuširanje</h2>
+            <div class="image-container">
+                <img src="vjezbe/vjezba5.jpg" alt="Vježba 5">
+                <img src="vjezbe/vjezba5a.jpg" alt="Vježba 5a">
+            </div>
+            <h2>6. vježba - koloriranje</h2>
+            <div class="image-container">
+                <img src="vjezbe/vjezba6.jpg" alt="Vježba 6">
+                <img src="vjezbe/vjezba6a.jpg" alt="Vježba 6a">
+            </div>
+            <h2>7. vježba - fotomontaža</h2>
+            <div class="image-container">
+                <img src="vjezbe/vjezba7.jpg" alt="Vježba 7">
+            </div>
+            <h2>Projektni zadatak - piksel grafika</h2>
+            <div class="image-container">
+                <img src="vjezbe/projekt2.jpg" alt="Projekt 2">
+            </div>
+            <h2>8. vježba - cinemagraf</h2>
+            <div class="image-container">
+                <img src="vjezbe/vjezba8.gif" alt="Vježba 8">
+                <img src="vjezbe/vjezba8a.gif" alt="Vježba 8a">
+            </div>
+            <h2>9. vježba - video</h2>
+            <div class="video-container">
+                <video controls autoplay>
+                    <source src="vjezbe/vjezba9.mp4" type="video/mp4">
+                </video>
+            </div>
+			<div class="video-container">
+                <video controls autoplay>
+                    <source src="vjezbe/vjezba9a.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
